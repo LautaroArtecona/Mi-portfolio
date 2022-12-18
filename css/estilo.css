@@ -3,6 +3,7 @@
     padding: 0;
 }
 header{
+    margin: 0 auto;
     position: fixed;
     top: 0;
     background-color: white;
@@ -83,5 +84,55 @@ nav>a{
     padding: 10px 15px;
 }
 .flecha{
-    
 }
+/* empieza la segunda seccion */
+.segunda-seccion{
+    width: 85%;
+    margin: 0 auto;
+    padding: 104px 0;
+}
+.sobremi{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 280px;
+}
+.sobremi>p{
+    background-color: #EEE8AA;
+    font-size: 18px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+}
+.sobremi>h3{
+    text-align: center;
+    font-size: 40px;
+}
+.caja-datos{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.datos{
+    flex: 60% 0 0;
+    padding-left: 10px;
+}
+.nombre{
+    font-size: 32px;
+}
+.descripcion{
+    font-size: 27px;
+}
+.experiencia{
+    background-color: pink;
+    flex: 30% 0 0;
+    text-align: center;
+}
+.años-exp{
+    font-size: 32px;
+}
+.años{
+    font-size: 160px;
+}
+
