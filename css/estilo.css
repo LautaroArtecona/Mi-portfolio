@@ -135,4 +135,20 @@ nav>a{
 .años{
     font-size: 160px;
 }
-
+.contenedor-contacto{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.datos-contacto1{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.datos-contacto2{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.datos-contacto1>div, .datos-contacto2>div{
+    flex: 50% 1 0;
+}
