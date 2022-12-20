@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+li{
+    list-style: none;
+}
 a{
     text-decoration: none;
 }
@@ -335,8 +338,71 @@ nav>a{
     justify-content: center;
 }
 .categorias>li{
-    list-style: none;
     padding: 9.6px 16px;
     margin: 0 0 -1px;
+}
+/* Empieza el footer */
+footer{
+    width: 85%;
+    margin: 0 auto;
+    padding: 104px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.info-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+    text-align: start;
+}
+.redes-footer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.redes-footer>li{
+    font-size: 26px;
+    margin: 2px 6px;
+}
+.redes-footer>li:first-child{
+    margin-left: 0;
+}
+.info-contacto>h2{
+    font-size: 40px;
+}
+.info-contacto>.prom-contacto,h3{
+    font-size: 21px;
+}
+.localidad, .n-tel{
+    font-size: 18px;
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 55%;
+    text-align: start;
+}
+.formulario>h2{
+    font-size: 40px;
+}
+form>label,button{
+    font-size: 16px;
+}
+.formulario>form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: start;
+}
+form>button{
+    width: max-content;
+    padding: 13px 41px;
+    margin: 24px 0 0;
+}
+.enviar-footer{
+    font-size: 23px;
 }
 
