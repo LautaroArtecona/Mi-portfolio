@@ -51,7 +51,7 @@ nav>a{
     justify-content: flex-end;
 }
 .redes>a{
-    color: grey;
+    color: #4d555a;
     margin: 0 10px;
     font-size: 22px;
 }
@@ -342,7 +342,13 @@ nav>a{
     margin: 0 0 -1px;
 }
 /* Empieza el footer */
+.info-contacto>h2,p,h3, .formulario>h2, form>label{
+    color: #212529;
+}
 footer{
+    background-color: #EEE8AA;
+}
+.cont-footer{
     width: 85%;
     margin: 0 auto;
     padding: 104px 0;
@@ -355,38 +361,57 @@ footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 40%;
+    width: 41%;
     text-align: start;
+    padding: 0 12px;
+}
+.prom-contacto{
+    margin: 0 0 48px;
 }
 .redes-footer{
     display: flex;
     flex-wrap: nowrap;
+    margin: 48px 0 0;
 }
 .redes-footer>li{
+    color:#4d555a;
     font-size: 26px;
-    margin: 2px 6px;
+    margin: 2px 8px;
+}
+.redes-fot-est{
+    color:#4d555a;
 }
 .redes-footer>li:first-child{
     margin-left: 0;
 }
 .info-contacto>h2{
     font-size: 40px;
+    margin: 0 0 48px;
 }
 .info-contacto>.prom-contacto,h3{
     font-size: 21px;
 }
 .localidad, .n-tel{
     font-size: 18px;
+    margin: 0 0 8px;
+}
+.info-contacto>h3{
+    margin: 0 0 8px;
+}
+.n-tel{
+    margin: 0 0 16px;
 }
 .formulario{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 55%;
+    width: 50%;
     text-align: start;
+    padding: 0 12px;
 }
 .formulario>h2{
     font-size: 40px;
+    margin: 0 0 48px;
 }
 form>label,button{
     font-size: 16px;
@@ -401,8 +426,28 @@ form>button{
     width: max-content;
     padding: 13px 41px;
     margin: 24px 0 0;
+    background-color: #212529;
+    border-color: #212529;
+    color: #ffffff;
 }
 .enviar-footer{
     font-size: 23px;
+    margin-left: 1rem;
+}
+form>input, textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    font-size: 1.25rem;
+    outline: none;
+}
+form>label{
+    margin: 24px 0 8px;
+}
+form>input{
+    height: 40px;
+}
+form>textarea{
+    padding: 12px 0 0 0;
 }
 
