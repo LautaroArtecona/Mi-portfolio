@@ -240,19 +240,26 @@ nav>a{
 .curriculum>h2{
     text-align: center;
     font-size: 40px;
+    margin: 0 0 48px;
 }
 .curriculum-box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 12px;
 }
-.resumen-curr{
-    width: 40%;
-    min-width: 400px;
+.caja-resumen{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 24px;
+    text-align: start;
+    width: 50%;
+    flex-direction: column;
+}
+.resumen-curr{
+    width: 92%;
+    min-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 12px;
     flex-direction: column;
     text-align: start;
     border-left: 2px solid #EEE8AA;
@@ -260,6 +267,22 @@ nav>a{
 .resumen-curr>hr{
     background: grey;
     width: 100%;
+    margin: 24px 0;
+}
+.caja-resumen>h2{
+    font-size: 28px;
+    padding: 0 0 8px;
+    margin: 0 0 24px;
+}
+.resumen-curr>h3{
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+.resumen-subt{
+    margin: 0 0 8px;
+}
+.resumen.descrip{
+    margin: 0 0 16px;
 }
 .cont-habilidades{
     display: flex;
@@ -270,7 +293,8 @@ nav>a{
 }
 .titulo-hab{
     text-align: start;
-    padding: 0 24px;
+    padding: 0 12px 8px;
+    margin: 48px 0 24px;
 }
 .cajas-hab{
     width: 45%;
@@ -278,13 +302,17 @@ nav>a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 12px;
+}
+.cajas-hab>p{
+    margin: 0 0 8px;
 }
 .progress-bar{
     width: 100%;
     height: 0.5rem;
     background-color: #f1f1f1;
     border-radius: 180px;
+    margin: 0 0 24px;
 }
 .bar-web, .bar-html, .bar-js, .bar-react, .bar-angular, .bar-bootstrap{
     height: 0.5rem;
@@ -308,6 +336,13 @@ nav>a{
 }
 .bar-bootstrap{
     width: 99%;
+}
+.descargar-cv>button{
+    margin: 48px 0 16px;
+    padding: 13px 42px;
+    color: #212529;
+    border-color: #212529;
+    background-color: transparent;
 }
 /* Empieza la quinta seccion */
 .quinta-seccion{
