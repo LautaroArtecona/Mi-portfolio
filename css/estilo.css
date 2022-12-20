@@ -93,10 +93,16 @@ nav>a{
 .flecha{
 }
 /* empieza la segunda seccion */
+.nombre,.sobremi>p,.sobremi>h2,.descripcion, .experiencia, .dat-cont-info{
+    color: #212529;
+}
+.dat-cont-dat{
+    color: #6c757d;
+}
 .segunda-seccion{
     width: 85%;
     margin: 0 auto;
-    padding: 104px 0;
+    padding: 104px 12px;
 }
 .sobremi{
     margin: 0 auto;
@@ -114,9 +120,9 @@ nav>a{
 .sobremi>h2{
     text-align: center;
     font-size: 40px;
+    margin: 0 0 48px;
 }
 .caja-datos{
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -127,37 +133,62 @@ nav>a{
 }
 .nombre{
     font-size: 32px;
+    margin: 0 0 16px;
+}
+.nombre>span{
+    border-bottom: 3px solid #EEE8AA;
 }
 .descripcion{
     font-size: 27px;
+    margin: 0 0 16px;
 }
 .experiencia{
-    background-color: pink;
     flex: 30% 0 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.experiencia>div{
+    margin: 0 auto;
+    align-items: center;
+    background-color: #EEE8AA;
+    width: 120px;
+    height: 120px;
+    border-radius: 360px;
+    display: flex;
+    justify-content: center;
 }
 .años-exp{
     font-size: 32px;
+    margin: 10px 0;
 }
 .años{
     font-size: 160px;
+    
 }
 .contenedor-contacto{
     display: flex;
     flex-wrap: nowrap;
+    margin: 24px 0 0;
 }
 .datos-contacto1{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
 }
 .datos-contacto2{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
 }
 .datos-contacto1>div, .datos-contacto2>div{
     flex: 50% 1 0;
+    margin: 16px 0 0;
+}
+.dat-cont-info{
+    margin-top: 8px;
 }
 /* empieza la tercer seccion */
 .contenedor-ter-sec{
@@ -265,7 +296,7 @@ nav>a{
     border-left: 2px solid #EEE8AA;
 }
 .resumen-curr>hr{
-    background: grey;
+    border-color: #ebebeb36;
     width: 100%;
     margin: 24px 0;
 }
