@@ -171,12 +171,12 @@ nav>a{
     flex-direction: column;
 }
 .habilidades>p{
+    margin: 0 auto;
     background-color: #EEE8AA;
     font-size: 18px;
     padding: 2px 8px;
     margin-bottom: 10px;
     width: max-content;
-    margin: 0 auto;
 }
 .habilidades>h3{
     text-align: center;
@@ -255,7 +255,7 @@ nav>a{
     background: grey;
     width: 100%;
 }
-.habilidades{
+.cont-habilidades{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -303,3 +303,40 @@ nav>a{
 .bar-bootstrap{
     width: 99%;
 }
+/* Empieza la quinta seccion */
+.quinta-seccion{
+    width: 85%;
+    margin: 0 auto;
+    padding: 104px 0;
+    text-align: center;
+}
+.curriculum{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.curriculum>p{
+    margin: 0 auto;
+    background-color: #EEE8AA;
+    font-size: 18px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    width: max-content;
+}
+.curriculum>h3{
+    text-align: center;
+    font-size: 40px;
+}
+.categorias{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.categorias>li{
+    list-style: none;
+    padding: 9.6px 16px;
+    margin: 0 0 -1px;
+}
+
