@@ -15,18 +15,22 @@ a{
 }
 /* inicio del header */
 header{
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
+    background-color: #ffffff;
+    position: fixed;
     z-index: 50;
 }
+.contenedor-header{
+    margin: 0 auto;
+    top: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
 .logo{
+    padding: 10px;
     width: 200px;
     margin: 0 0;
     display: flex;
@@ -38,10 +42,11 @@ header{
     width: 160px;
 }
 nav{
+    width: 610px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 nav>a{
     text-transform: uppercase;
@@ -55,6 +60,7 @@ nav>a:hover{
     font-size: 18px;
 }
 .redes{
+    padding-left: 10px;
     width: 200px;
     margin: 0;
     display: flex;
@@ -153,7 +159,7 @@ nav>a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 280px;
+    width: 380px;
 }
 .sobremi>p{
     background-color: #EEE8AA;
@@ -165,6 +171,7 @@ nav>a:hover{
     text-align: center;
     font-size: 40px;
     margin: 0 0 48px;
+
 }
 .caja-datos{
     display: flex;
@@ -183,7 +190,7 @@ nav>a:hover{
     border-bottom: 3px solid #EEE8AA;
 }
 .descripcion{
-    font-size: 27px;
+    font-size: 21px;
     margin: 0 0 16px;
 }
 .experiencia{
