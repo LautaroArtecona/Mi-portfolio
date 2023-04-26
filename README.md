@@ -4,6 +4,7 @@ Aqui vas a poder encontrar mis proyectos realizados, un breve resumen de mi curr
  **Mi portfolio** esta realizado con:
 + HTML
 + CSS
++ JS
 
 Ingresando al siguiente link podras verlo!  👇🏽
 
