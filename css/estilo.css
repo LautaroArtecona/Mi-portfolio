@@ -13,6 +13,10 @@ li{
 a{
     text-decoration: none;
 }
+button{
+    border: none;
+    cursor: pointer;
+}
 /* inicio del header */
 header{
     width: 100%;
@@ -35,13 +39,15 @@ header{
     margin: 0 0;
     display: flex;
     align-items: center;
-
 }
 .logo>img{
     margin: 0;
     width: 160px;
 }
-nav{
+.hamburguesa{
+    display: none;
+}
+.menu{
     width: 610px;
     display: flex;
     flex-wrap: nowrap;
@@ -75,17 +81,19 @@ nav>a:hover{
 /* inicio de la primer seccion HERO */
 .hero{
     background-color: #EEE8AA;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .infohero{
     width: 85%;
+    margin-top: 70px;
+    padding: 20px 0 50px;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .presentacion{
     padding: 0 10px;
@@ -105,7 +113,24 @@ nav>a:hover{
 }
 .presentacion>h2{
     font-size: 48px;
+/*     white-space: nowrap;
+    display: block;
+    width: 19ch;
+    border-right: 4px solid #000000;
+    animation: escribiendo 3s steps(19),
+                parpadeo 0.4s infinite alternate;
+    overflow: hidden; */
 }
+/* @keyframes escribiendo {
+    from{
+        width: 0;
+    }
+}
+@keyframes parpadeo {
+    70%{
+        border-color: transparent;
+    }
+} */
 .presentacion>h1{
     font-size: 100px;
 }
@@ -115,7 +140,7 @@ nav>a:hover{
     margin: 16px 0 0;
     background-color: #212529;
     color: #ffffff;
-    border-color: #212529;
+    border: 1px solid #212529;
     transition: 0.3s ease;
 }
 .boton-trab:hover{
@@ -128,13 +153,13 @@ nav>a:hover{
     margin: 16px 0 0;
     background-color: transparent;
     color: #212529;
-    border-color: transparent;
+    border: 1px solid transparent;
     transition: 0.3s ease;
 }
 .contactame:hover{
     background-color: #212529;
-    border-color: #212529;
     color: #ffffff;
+    border: 1px solid #212529;
 }
 .contactame>i{
     margin-left: 8px;
@@ -171,11 +196,10 @@ nav>a:hover{
     text-align: center;
     font-size: 40px;
     margin: 0 0 48px;
-
 }
 .caja-datos{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
 .datos{
@@ -215,28 +239,30 @@ nav>a:hover{
 }
 .años{
     font-size: 160px;
-    
 }
 .contenedor-contacto{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 24px 0 0;
 }
 .datos-contacto1{
-    width: 50%;
+    width: 45%;
+    min-width: 306px;
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px;
 }
 .datos-contacto2{
-    width: 50%;
+    width: 45%;
+    min-width: 306px;
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px;
 }
 .datos-contacto1>div, .datos-contacto2>div{
-    flex: 50% 1 0;
-    margin: 16px 0 0;
+    width: 263px;
+    margin: 16px 10px 0;
 }
 .dat-cont-info{
     margin-top: 8px;
@@ -331,6 +357,7 @@ nav>a:hover{
 .curriculum-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0 12px;
 }
 .caja-resumen{
@@ -338,7 +365,9 @@ nav>a:hover{
     flex-wrap: wrap;
     text-align: start;
     width: 50%;
+    min-width: 390px;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .resumen-curr{
     width: 92%;
@@ -367,18 +396,18 @@ nav>a:hover{
 .resumen-subt{
     margin: 0 0 8px;
 }
-.resumen.descrip{
+.resumen-descrip{
     margin: 0 0 16px;
 }
 .cont-habilidades{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     text-align: start;
     flex-direction: row;
 }
 .titulo-hab{
-    text-align: start;
+    text-align: center;
     padding: 0 12px 8px;
     margin: 48px 0 24px;
 }
@@ -427,7 +456,7 @@ nav>a:hover{
     margin: 48px 0 16px;
     padding: 13px 42px;
     color: #212529;
-    border-color: #212529;
+    border: 1px solid #212529;
     background-color: transparent;
     transition: 0.3s ease;
 }
@@ -473,6 +502,7 @@ nav>a:hover{
 }
 .categ-trab{
     color: #6c757d;
+    transition: 0.3s ease;
 }
 .categ-trab:hover{
     color: #212529;
@@ -517,6 +547,7 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     width: 41%;
+    min-width: 366px;
     text-align: start;
     padding: 0 12px;
 }
@@ -561,6 +592,7 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
+    min-width: 442px;
     text-align: start;
     padding: 0 12px;
 }
@@ -582,8 +614,13 @@ form>button{
     padding: 13px 41px;
     margin: 24px 0 0;
     background-color: #212529;
-    border-color: #212529;
+    border: 1px solid #212529;
     color: #ffffff;
+    transition: 0.3s ease;
+}
+form>button:hover{
+    background-color: #EEE8AA;
+    color: #212529;
 }
 .enviar-footer{
     font-size: 23px;
@@ -613,4 +650,242 @@ form>textarea{
 }
 .github:hover{
     color: #000000;
+}
+@media(max-width:1020px){
+    .contenedor-header{
+        width: 100%;
+        height: 55px;
+    }
+    .menu{
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 54px;
+        background-color: #ffffff;
+        width: 30vw;
+        min-width: 200px;
+        height: 33vh;
+        left: -100%;
+        transition: all 0.4s ease-out;
+    }
+    .menu_visible{
+        left: 0;
+    }
+    .hamburguesa{
+        display: block;
+        margin-left: 22px;
+        cursor: pointer;
+    }
+    .hamburguesa>i{
+        font-size: 24px;
+        padding: 0 5px;
+        color: #4d555a;
+        transition: 0.3s ease;
+    }
+    .hamburguesa>i:hover{
+        color: #EEE8AA;
+    }
+    .redes{
+        width: max-content;
+        padding-right: 10px;
+    }
+    .formulario{
+        margin-top: 45px;
+    }
+}
+@media(max-width:600px){
+    .logo{
+        width: max-content;
+    }
+    .logo>img{
+        display: none;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .presentacion>h3{
+        margin: 0 0 16px;
+        font-size: 16px;
+    }
+    .presentacion>h2{
+        font-size: 36px;
+    }
+    .presentacion>h1{
+        font-size: 64px;
+    }
+    .foto{
+        width: 320px;
+        border: 13px solid #ffffff;
+        border-radius: 360px;
+        box-shadow: 0px 0px 30px #ccc78c;
+    }
+    .caja-datos{
+        justify-content: center;
+    }
+    .info-contacto>h2{
+        font-size: 30px;
+    }
+    .formulario>h2{
+        font-size: 30px;
+    }
+    .formulario{
+        width: 50%;
+        min-width: 310px;
+    }
+    .info-contacto{
+        width: 41%;
+        min-width: 286px;
+    }
+    .cajas-hab{
+        min-width: 300px;
+    }
+    .sobremi{
+        width: 320px;
+    }
+    .sobremi>p{
+        font-size: 14px;
+    }
+    .sobremi>h2{
+        font-size: 30px;
+    }
+    .datos{
+        flex: 60% 0 0;
+        padding-left: 5px;
+        min-width: 300px;
+    }
+    .nombre{
+        font-size: 24px;
+        margin: 0 0 16px;
+    }
+    .nombre>span{
+        border-bottom: 2px solid #EEE8AA;
+    }
+    .descripcion{
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+    .experiencia{
+        flex: 30% 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0;
+    }
+    .experiencia>div{
+        margin: 0 auto;
+        align-items: center;
+        background-color: #EEE8AA;
+        width: 90px;
+        height: 90px;
+        border-radius: 360px;
+        display: flex;
+        justify-content: center;
+    }
+    .años-exp{
+        font-size: 26px;
+        margin: 10px 0 20px;
+    }
+    .años{
+        font-size: 130px;
+    }
+    .dat-cont-info{
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .dat-cont-dat{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    /* tercera seccion */
+    .habilidades>p{
+        font-size: 14px;
+    }
+    .habilidades>h2{
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+    .cuadros{
+        height: 230px;
+        width: 280px;
+        margin: 60px 0 0;
+    }
+    .cuadros>i{
+        font-size: 3rem;
+    }
+    .cuadros>h3{
+        font-size: 20px;
+    }
+    .cuadros>p{
+        font-size: 14px;
+    }
+    /* cuarta seccion */
+    .curriculum>p{
+        font-size: 14px;
+    }
+    .curriculum>h2{
+        font-size: 30px;
+    }
+    .caja-resumen{
+        padding: 0 10px;
+        margin-bottom: 30px;
+        min-width: 340px;
+    }
+    .caja-resumen>h2{
+        font-size: 24px;
+    }
+    .resumen-curr{
+        width: 92%;
+        min-width: 330px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        flex-direction: column;
+        text-align: start;
+        border-left: 2px solid #EEE8AA;
+    }
+    .resumen-curr>h3{
+        font-size: 18px;
+    }
+    .resumen-subt{
+        font-size: 14px;
+    }
+    .resumen-descrip{
+        font-size: 14px;
+    }
+    /* quinta seccion */
+    .curriculum>p{
+        font-size: 14px;
+    }
+    .curriculum>h2{
+        font-size: 30px;
+    }
+    .categ-trab{
+        font-size: 14px;
+    }
+    /* footer */
+    .info-contacto>h2{
+        font-size: 30px;
+    }
+    .info-contacto>.prom-contacto,h3{
+        font-size: 18px;
+    }
+    .localidad, .n-tel{
+        font-size: 16px;
+    }
+    .formulario>h2{
+        font-size: 30px;
+    }
+    form>label,button{
+        font-size: 14px;
+    }
+    form>button{
+        padding: 10px 32px;
+        margin: 24px 0 0;
+    }
+    .segunda-seccion, .tercera-seccion, .cuarta-seccion, .quinta-seccion, .cont-footer{
+        padding: 62px 10px;
+    }
 }
