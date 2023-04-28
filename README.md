@@ -5,6 +5,7 @@ Aqui vas a poder encontrar mis proyectos realizados, un breve resumen de mi curr
 + HTML
 + CSS
 + JS
++ BOOTSTRAP
 
 Ingresando al siguiente link podras verlo!  👇🏽
 
