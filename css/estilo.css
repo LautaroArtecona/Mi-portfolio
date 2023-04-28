@@ -435,7 +435,7 @@ nav>a:hover{
     border-radius: 180px;
 }
 .bar-web{
-    width: 65%;
+    width: 75%;
 }
 .bar-html{
     width: 95%;
@@ -447,10 +447,10 @@ nav>a:hover{
     width: 70%;
 }
 .bar-angular{
-    width: 60%;
+    width: 30%;
 }
 .bar-bootstrap{
-    width: 99%;
+    width: 50%;
 }
 .descargar-cv>button{
     margin: 48px 0 16px;
@@ -719,8 +719,6 @@ form>textarea{
     .foto{
         width: 320px;
         border: 13px solid #ffffff;
-        border-radius: 360px;
-        box-shadow: 0px 0px 30px #ccc78c;
     }
     .caja-datos{
         justify-content: center;
@@ -839,12 +837,7 @@ form>textarea{
     .resumen-curr{
         width: 92%;
         min-width: 330px;
-        display: flex;
-        flex-wrap: wrap;
         padding: 0 10px;
-        flex-direction: column;
-        text-align: start;
-        border-left: 2px solid #EEE8AA;
     }
     .resumen-curr>h3{
         font-size: 18px;
@@ -887,5 +880,76 @@ form>textarea{
     }
     .segunda-seccion, .tercera-seccion, .cuarta-seccion, .quinta-seccion, .cont-footer{
         padding: 62px 10px;
+    }
+}
+@media(max-width:400px){
+    /* Primera Seccion */
+    .presentacion>h3{
+        margin: 0 0 16px;
+        font-size: 14px;
+    }
+    .presentacion>h2{
+        font-size: 26px;
+    }
+    .presentacion>h1{
+        font-size: 52px;
+    }
+    .foto{
+        width: 260px;
+        border: 10px solid #ffffff;
+    }
+    /* Segunda seccion */
+    .sobremi{
+        width: 280px;
+    }
+    .datos-contacto1{
+        width: 45%;
+        min-width: 280px;
+        padding: 0 6px;
+    }
+    .datos-contacto2{
+        width: 45%;
+        min-width: 280px;
+        padding: 0 6px;
+    }
+    .datos-contacto1>div, .datos-contacto2>div{
+        width: 263px;
+        margin: 12px 8px 0;
+    }
+    /* Tercera seccion */
+    .cuadros{
+        height: 230px;
+        width: 220px;
+        margin: 60px 0 0;
+    }
+    .cuadros>i{
+        font-size: 3rem;
+    }
+    .cuadros>h3{
+        font-size: 20px;
+    }
+    .cuadros>p{
+        font-size: 14px;
+    }
+    /* Cuarta seccion */
+    .curriculum-box{
+        padding: 0 8px;
+    }
+    .caja-resumen{
+        min-width: 290px;
+        margin-bottom: 30px;
+    }
+    .resumen-curr{
+        width: 92%;
+        min-width: 260px;
+        padding: 0 8px;
+    }
+    /* Fotter */
+    .formulario{
+        min-width: 280px;
+    }
+    .info-contacto{
+        width: 41%;
+        min-width: 256px;
     }
 }
